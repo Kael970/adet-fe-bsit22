@@ -1,0 +1,97 @@
+/* ===== Page Header ===== */
+.page-header {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #ffffff;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* ===== Posts Container ===== */
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 850px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+}
+
+/* ===== Post Card ===== */
+.post-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.5rem 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* ===== Post Content ===== */
+.post-content {
+  max-width: 70%;
+
+  h2 {
+    margin: 0 0 0.4rem;
+    font-size: 1.2rem;
+    color: #2c3e50;
+  }
+
+  p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+
+/* ===== Delete Button ===== */
+.delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+
+  &:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .post-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .post-content {
+    max-width: 100%;
+  }
+
+  .delete-btn {
+    align-self: flex-end;
+  }
+}
