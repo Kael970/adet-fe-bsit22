@@ -11,16 +11,16 @@ import { CommonModule } from '@angular/common';
 export class PostsComponent {
   public posts = signal([
     {
-      title: 'Kurt',
-      description: 'secret'
+      title: 'John',
+      description: 'Gwapo'
     },
     {
-      title: 'Xierick',
-      description: 'secret'
+      title: 'Lloyd',
+      description: 'Kaayo'
     },
     {
-      title: 'Bautista',
-      description: 'secret'
+      title: 'Valmoria',
+      description: 'Ko'
     }
   ])
 
